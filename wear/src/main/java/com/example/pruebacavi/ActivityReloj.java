@@ -37,6 +37,10 @@ public class ActivityReloj extends WearableActivity {
         //String wearmessage = getIntent().getStringExtra("message");
         //Log.d(CLASS_TAG, "mensaje recibido: " +  wearmessage);
 
+//        if(!getIntent().getStringExtra("message").equals("")){
+//
+//        }
+
         //indicador(wearmessage);
         indicador("Hola");
         //aquí va cambio de luces
