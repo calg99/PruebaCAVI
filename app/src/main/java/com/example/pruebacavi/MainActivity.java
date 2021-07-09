@@ -91,34 +91,34 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btLsala.setOnClickListener(this);
 
         //WEAR
-       /* GoogleApiClient.Builder builder = new GoogleApiClient.Builder(this);
-        builder.addApi(Wearable.API);
-        builder.addConnectionCallbacks(this);
-        builder.addOnConnectionFailedListener(this);
-        googleApiClient = builder.build();*/
+//        GoogleApiClient.Builder builder = new GoogleApiClient.Builder(this);
+//        builder.addApi(Wearable.API);
+//        builder.addConnectionCallbacks(this);
+//        builder.addOnConnectionFailedListener(this);
+//        googleApiClient = builder.build();
     }
 
 
     //WEAR
 
-    /*
-        @Override
-        protected void onStart() {
-            super.onStart();
-            googleApiClient.connect();
-        }
 
-        @Override
-        protected void onStop() {
+//        @Override
+//        protected void onStart() {
+//            super.onStart();
+//            googleApiClient.connect();
+//        }
+//
+//        @Override
+//        protected void onStop() {
+//
+//            if (googleApiClient != null && googleApiClient.isConnected()) {
+//                googleApiClient.disconnect();
+//            }
+//
+//            super.onStop();
+//        }
 
-            if (googleApiClient != null && googleApiClient.isConnected()) {
-                googleApiClient.disconnect();
-            }
 
-            super.onStop();
-        }
-
-    */
     //Respuestas según Servidor, control de luces
     private void indicador(String r) {
 
