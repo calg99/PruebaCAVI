@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<Button
+    android:id="@+id/btLsala"
+    android:layout_width="275dp"
+    android:layout_height="47dp"
+    android:text="Luz de la Sala"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.022"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.814"
+    tools:ignore="MissingConstraints" />
+
+<Button
+android:id="@+id/btTv"
+android:layout_width="277dp"
+android:layout_height="41dp"
+android:text="Television"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.007"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintVertical_bias="0.578"
+tools:ignore="MissingConstraints" />
+
+<Button
+android:id="@+id/btAC"
+android:layout_width="276dp"
+android:layout_height="44dp"
+android:text="Aire Acondicionado"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.0"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+tools:ignore="MissingConstraints,OnClick" />
+
+<Button
+android:id="@+id/btLcuarto"
+android:layout_width="274dp"
+android:layout_height="45dp"
+android:text="Luz del Cuarto"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.021"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintVertical_bias="0.657"
+tools:ignore="MissingConstraints,OnClick" />
+
+<Button
+android:id="@+id/btLcocina"
+android:layout_width="275dp"
+android:layout_height="47dp"
+android:onClick="onClick"
+android:text="Luz de Cocina"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.022"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintVertical_bias="0.735"
+tools:ignore="MissingConstraints" />
+
+<Switch
+android:id="@+id/cambioTCP"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="@string/tcp"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toStartOf="@+id/txUDP"
+app:layout_constraintHorizontal_bias="0.974"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/btLsala"
+tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+<TextView
+android:id="@+id/txUDP"
+android:layout_width="41dp"
+android:layout_height="23dp"
+android:layout_marginEnd="144dp"
+android:layout_marginRight="144dp"
+android:text="UDP"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintVertical_bias="0.929" />
+
+<ProgressBar
+android:id="@+id/barraProgreso"
+style="?android:attr/progressBarStyle"
+android:layout_width="85dp"
+android:layout_height="75dp"
+android:visibility="invisible"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintVertical_bias="0.33" />
+
+<TextView
+android:id="@+id/txMensaje"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Bienvenido"
+android:visibility="visible"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.498"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/barraProgreso"
+app:layout_constraintVertical_bias="0.0" />
+
+<ImageView
+android:id="@+id/caVi"
+android:layout_width="318dp"
+android:layout_height="142dp"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.494"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintVertical_bias="0.071"
+app:srcCompat="@mipmap/cavi"
+tools:ignore="MissingConstraints" />
+
+<ImageView
+android:id="@+id/aa"
+android:layout_width="42dp"
+android:layout_height="42dp"
+android:visibility="invisible"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.516"
+app:layout_constraintStart_toEndOf="@+id/btAC"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintVertical_bias="0.497"
+app:srcCompat="@mipmap/activado"
+tools:ignore="MissingConstraints" />
+
+<ImageView
+android:id="@+id/ab"
+android:layout_width="42dp"
+android:layout_height="42dp"
+android:visibility="invisible"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.505"
+app:layout_constraintStart_toEndOf="@+id/btTv"
+app:layout_constraintTop_toBottomOf="@+id/aa"
+app:layout_constraintVertical_bias="0.039"
+app:srcCompat="@mipmap/activado"
+tools:ignore="MissingConstraints" />
+
+<ImageView
+android:id="@+id/ac"
+android:layout_width="42dp"
+android:layout_height="42dp"
+android:visibility="invisible"
+app:layout_constraintBottom_toTopOf="@+id/ad"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.51"
+app:layout_constraintStart_toEndOf="@+id/btLcuarto"
+app:layout_constraintTop_toBottomOf="@+id/ab"
+app:srcCompat="@mipmap/activado"
+tools:ignore="MissingConstraints" />
+
+<ImageView
+android:id="@+id/ad"
+android:layout_width="42dp"
+android:layout_height="42dp"
+android:visibility="invisible"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.505"
+app:layout_constraintStart_toEndOf="@+id/btLcocina"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintVertical_bias="0.73"
+app:srcCompat="@mipmap/activado"
+tools:ignore="MissingConstraints" />
+
+<ImageView
+android:id="@+id/ae"
+android:layout_width="42dp"
+android:layout_height="42dp"
+android:visibility="invisible"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.505"
+app:layout_constraintStart_toEndOf="@+id/btLsala"
+app:layout_constraintTop_toBottomOf="@+id/ad"
+app:layout_constraintVertical_bias="0.086"
+app:srcCompat="@mipmap/activado"
+tools:ignore="MissingConstraints" />
+
+<ImageView
+android:id="@+id/ba"
+android:layout_width="42dp"
+android:layout_height="42dp"
+app:layout_constraintBottom_toTopOf="@+id/ab"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.516"
+app:layout_constraintStart_toEndOf="@+id/btAC"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintVertical_bias="0.963"
+app:srcCompat="@mipmap/circulo"
+tools:ignore="MissingConstraints" />
+
+<ImageView
+android:id="@+id/bb"
+android:layout_width="42dp"
+android:layout_height="42dp"
+android:layout_marginTop="12dp"
+app:layout_constraintBottom_toTopOf="@+id/ac"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.505"
+app:layout_constraintStart_toEndOf="@+id/btTv"
+app:layout_constraintTop_toBottomOf="@+id/aa"
+app:layout_constraintVertical_bias="0.0"
+app:srcCompat="@mipmap/circulo"
+tools:ignore="MissingConstraints" />
+
+<ImageView
+android:id="@+id/bc"
+android:layout_width="42dp"
+android:layout_height="42dp"
+app:layout_constraintBottom_toTopOf="@+id/ad"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.51"
+app:layout_constraintStart_toEndOf="@+id/btLcuarto"
+app:layout_constraintTop_toBottomOf="@+id/ab"
+app:srcCompat="@mipmap/circulo"
+tools:ignore="MissingConstraints" />
+
+<ImageView
+android:id="@+id/bd"
+android:layout_width="42dp"
+android:layout_height="42dp"
+app:layout_constraintBottom_toTopOf="@+id/ae"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.505"
+app:layout_constraintStart_toEndOf="@+id/btLcocina"
+app:layout_constraintTop_toBottomOf="@+id/ac"
+app:layout_constraintVertical_bias="0.458"
+app:srcCompat="@mipmap/circulo"
+tools:ignore="MissingConstraints" />
+
+<ImageView
+android:id="@+id/be"
+android:layout_width="42dp"
+android:layout_height="42dp"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.505"
+app:layout_constraintStart_toEndOf="@+id/btLsala"
+app:layout_constraintTop_toBottomOf="@+id/ad"
+app:layout_constraintVertical_bias="0.086"
+app:srcCompat="@mipmap/circulo"
+tools:ignore="MissingConstraints" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

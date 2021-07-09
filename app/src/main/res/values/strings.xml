@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Cavi</string>
+    <string name="etUsuario">Usuario</string>
+    <string name="etClave">Clave</string>
+    <string name="errorClave">Error clave incorrecta</string>
+    <string name="tcp">TCP</string>
+</resources>
