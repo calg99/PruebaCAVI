@@ -34,10 +34,11 @@ public class ActivityReloj extends WearableActivity {
         // Enables Always-on
         // setAmbientEnabled();
 
-        String wearmessage = getIntent().getStringExtra("message");
-        Log.d(CLASS_TAG, "mensaje recibido: " +  wearmessage);
+        //String wearmessage = getIntent().getStringExtra("message");
+        //Log.d(CLASS_TAG, "mensaje recibido: " +  wearmessage);
 
-        indicador(wearmessage);
+        //indicador(wearmessage);
+        indicador("Hola");
         //aquí va cambio de luces
 
     }

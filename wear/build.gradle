@@ -9,7 +9,8 @@ android {
     defaultConfig {
         applicationId "com.example.pruebacavi"
         minSdkVersion 24
-        targetSdkVersion "S"
+        //noinspection ExpiredTargetSdkVersion
+        targetSdkVersion 24
         versionCode 1
         versionName "1.0"
 
