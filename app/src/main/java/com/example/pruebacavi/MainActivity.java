@@ -90,6 +90,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button btLsala = (Button) findViewById(R.id.btLsala);
         btLsala.setOnClickListener(this);
 
+        //Este es un comentario nuevo
+
         //WEAR
 //        GoogleApiClient.Builder builder = new GoogleApiClient.Builder(this);
 //        builder.addApi(Wearable.API);
